@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9717A061B6B44030004B4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A051B6B44030004B4A6 /* AppDelegate.swift */; };
+		D9717A081B6B44030004B4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A071B6B44030004B4A6 /* ViewController.swift */; };
+		D9717A0B1B6B44030004B4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9717A091B6B44030004B4A6 /* Main.storyboard */; };
+		D9717A0D1B6B44030004B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9717A0C1B6B44030004B4A6 /* Assets.xcassets */; };
+		D9717A101B6B44030004B4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9717A0E1B6B44030004B4A6 /* LaunchScreen.storyboard */; };
+		D9717A1B1B6B44040004B4A6 /* ConnectivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A1A1B6B44040004B4A6 /* ConnectivityTests.swift */; };
+		D9717A261B6B44040004B4A6 /* ConnectivityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A251B6B44040004B4A6 /* ConnectivityUITests.swift */; };
+		D9717A2B1B6B44040004B4A6 /* Connectivity WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D9717A2A1B6B44040004B4A6 /* Connectivity WatchKit App.app */; };
+		D9717A311B6B44040004B4A6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9717A2F1B6B44040004B4A6 /* Interface.storyboard */; };
+		D9717A331B6B44040004B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9717A321B6B44040004B4A6 /* Assets.xcassets */; };
+		D9717A3A1B6B44040004B4A6 /* Connectivity WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9717A391B6B44040004B4A6 /* Connectivity WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9717A411B6B44040004B4A6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A401B6B44040004B4A6 /* InterfaceController.swift */; };
+		D9717A431B6B44040004B4A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A421B6B44040004B4A6 /* ExtensionDelegate.swift */; };
+		D9717A451B6B44040004B4A6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A441B6B44040004B4A6 /* NotificationController.swift */; };
+		D9717A471B6B44040004B4A6 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A461B6B44040004B4A6 /* GlanceController.swift */; };
+		D9717A491B6B44040004B4A6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A481B6B44040004B4A6 /* ComplicationController.swift */; };
+		D9717A4B1B6B44040004B4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9717A4A1B6B44040004B4A6 /* Assets.xcassets */; };
+		D9717A611B6B44750004B4A6 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A601B6B44750004B4A6 /* SessionDelegate.swift */; };
+		D9717A631B6B50080004B4A6 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9717A601B6B44750004B4A6 /* SessionDelegate.swift */; };
+		D9DBC67F1B718F7000797776 /* jellyfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9DBC67E1B718F7000797776 /* jellyfish.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9717A171B6B44040004B4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97179FA1B6B44030004B4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9717A011B6B44030004B4A6;
+			remoteInfo = Connectivity;
+		};
+		D9717A221B6B44040004B4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97179FA1B6B44030004B4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9717A011B6B44030004B4A6;
+			remoteInfo = Connectivity;
+		};
+		D9717A2C1B6B44040004B4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97179FA1B6B44030004B4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9717A291B6B44040004B4A6;
+			remoteInfo = "Connectivity WatchKit App";
+		};
+		D9717A3B1B6B44040004B4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D97179FA1B6B44030004B4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9717A381B6B44040004B4A6;
+			remoteInfo = "Connectivity WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D9717A521B6B44040004B4A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9717A3A1B6B44040004B4A6 /* Connectivity WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A561B6B44040004B4A6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D9717A2B1B6B44040004B4A6 /* Connectivity WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D9717A021B6B44030004B4A6 /* Connectivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connectivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9717A051B6B44030004B4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9717A071B6B44030004B4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9717A0A1B6B44030004B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9717A0C1B6B44030004B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9717A0F1B6B44030004B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9717A111B6B44030004B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9717A161B6B44040004B4A6 /* ConnectivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9717A1A1B6B44040004B4A6 /* ConnectivityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityTests.swift; sourceTree = "<group>"; };
+		D9717A1C1B6B44040004B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9717A211B6B44040004B4A6 /* ConnectivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectivityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9717A251B6B44040004B4A6 /* ConnectivityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityUITests.swift; sourceTree = "<group>"; };
+		D9717A271B6B44040004B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9717A2A1B6B44040004B4A6 /* Connectivity WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connectivity WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9717A301B6B44040004B4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D9717A321B6B44040004B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9717A341B6B44040004B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9717A391B6B44040004B4A6 /* Connectivity WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Connectivity WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9717A3F1B6B44040004B4A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D9717A401B6B44040004B4A6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D9717A421B6B44040004B4A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D9717A441B6B44040004B4A6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D9717A461B6B44040004B4A6 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		D9717A481B6B44040004B4A6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D9717A4A1B6B44040004B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9717A4C1B6B44040004B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9717A601B6B44750004B4A6 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Connectivity/SessionDelegate.swift; sourceTree = "<group>"; };
+		D9C6769D1B73142100D4466D /* Connectivity.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Connectivity.playground; sourceTree = SOURCE_ROOT; };
+		D9DBC67E1B718F7000797776 /* jellyfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jellyfish.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D97179FF1B6B44030004B4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A131B6B44040004B4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A1E1B6B44040004B4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A361B6B44040004B4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D97179F91B6B44030004B4A6 = {
+			isa = PBXGroup;
+			children = (
+				D9717A621B6B4FF00004B4A6 /* Common */,
+				D9717A041B6B44030004B4A6 /* Connectivity */,
+				D9717A191B6B44040004B4A6 /* ConnectivityTests */,
+				D9717A241B6B44040004B4A6 /* ConnectivityUITests */,
+				D9717A2E1B6B44040004B4A6 /* Connectivity WatchKit App */,
+				D9717A3D1B6B44040004B4A6 /* Connectivity WatchKit Extension */,
+				D9717A031B6B44030004B4A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9717A031B6B44030004B4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A021B6B44030004B4A6 /* Connectivity.app */,
+				D9717A161B6B44040004B4A6 /* ConnectivityTests.xctest */,
+				D9717A211B6B44040004B4A6 /* ConnectivityUITests.xctest */,
+				D9717A2A1B6B44040004B4A6 /* Connectivity WatchKit App.app */,
+				D9717A391B6B44040004B4A6 /* Connectivity WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9717A041B6B44030004B4A6 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				D9DBC67E1B718F7000797776 /* jellyfish.jpg */,
+				D9717A051B6B44030004B4A6 /* AppDelegate.swift */,
+				D9717A071B6B44030004B4A6 /* ViewController.swift */,
+				D9717A091B6B44030004B4A6 /* Main.storyboard */,
+				D9717A0C1B6B44030004B4A6 /* Assets.xcassets */,
+				D9717A0E1B6B44030004B4A6 /* LaunchScreen.storyboard */,
+				D9717A111B6B44030004B4A6 /* Info.plist */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		D9717A191B6B44040004B4A6 /* ConnectivityTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A1A1B6B44040004B4A6 /* ConnectivityTests.swift */,
+				D9717A1C1B6B44040004B4A6 /* Info.plist */,
+			);
+			path = ConnectivityTests;
+			sourceTree = "<group>";
+		};
+		D9717A241B6B44040004B4A6 /* ConnectivityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A251B6B44040004B4A6 /* ConnectivityUITests.swift */,
+				D9717A271B6B44040004B4A6 /* Info.plist */,
+			);
+			path = ConnectivityUITests;
+			sourceTree = "<group>";
+		};
+		D9717A2E1B6B44040004B4A6 /* Connectivity WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A2F1B6B44040004B4A6 /* Interface.storyboard */,
+				D9717A321B6B44040004B4A6 /* Assets.xcassets */,
+				D9717A341B6B44040004B4A6 /* Info.plist */,
+			);
+			path = "Connectivity WatchKit App";
+			sourceTree = "<group>";
+		};
+		D9717A3D1B6B44040004B4A6 /* Connectivity WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A401B6B44040004B4A6 /* InterfaceController.swift */,
+				D9C6769D1B73142100D4466D /* Connectivity.playground */,
+				D9717A421B6B44040004B4A6 /* ExtensionDelegate.swift */,
+				D9717A441B6B44040004B4A6 /* NotificationController.swift */,
+				D9717A461B6B44040004B4A6 /* GlanceController.swift */,
+				D9717A481B6B44040004B4A6 /* ComplicationController.swift */,
+				D9717A4A1B6B44040004B4A6 /* Assets.xcassets */,
+				D9717A4C1B6B44040004B4A6 /* Info.plist */,
+				D9717A3E1B6B44040004B4A6 /* Supporting Files */,
+			);
+			path = "Connectivity WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D9717A3E1B6B44040004B4A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A3F1B6B44040004B4A6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9717A621B6B4FF00004B4A6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D9717A601B6B44750004B4A6 /* SessionDelegate.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9717A011B6B44030004B4A6 /* Connectivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9717A571B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "Connectivity" */;
+			buildPhases = (
+				D97179FE1B6B44030004B4A6 /* Sources */,
+				D97179FF1B6B44030004B4A6 /* Frameworks */,
+				D9717A001B6B44030004B4A6 /* Resources */,
+				D9717A561B6B44040004B4A6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9717A2D1B6B44040004B4A6 /* PBXTargetDependency */,
+			);
+			name = Connectivity;
+			productName = Connectivity;
+			productReference = D9717A021B6B44030004B4A6 /* Connectivity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9717A151B6B44040004B4A6 /* ConnectivityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9717A5A1B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "ConnectivityTests" */;
+			buildPhases = (
+				D9717A121B6B44040004B4A6 /* Sources */,
+				D9717A131B6B44040004B4A6 /* Frameworks */,
+				D9717A141B6B44040004B4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9717A181B6B44040004B4A6 /* PBXTargetDependency */,
+			);
+			name = ConnectivityTests;
+			productName = ConnectivityTests;
+			productReference = D9717A161B6B44040004B4A6 /* ConnectivityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9717A201B6B44040004B4A6 /* ConnectivityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9717A5D1B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "ConnectivityUITests" */;
+			buildPhases = (
+				D9717A1D1B6B44040004B4A6 /* Sources */,
+				D9717A1E1B6B44040004B4A6 /* Frameworks */,
+				D9717A1F1B6B44040004B4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9717A231B6B44040004B4A6 /* PBXTargetDependency */,
+			);
+			name = ConnectivityUITests;
+			productName = ConnectivityUITests;
+			productReference = D9717A211B6B44040004B4A6 /* ConnectivityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D9717A291B6B44040004B4A6 /* Connectivity WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9717A531B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "Connectivity WatchKit App" */;
+			buildPhases = (
+				D9717A281B6B44040004B4A6 /* Resources */,
+				D9717A521B6B44040004B4A6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9717A3C1B6B44040004B4A6 /* PBXTargetDependency */,
+			);
+			name = "Connectivity WatchKit App";
+			productName = "Connectivity WatchKit App";
+			productReference = D9717A2A1B6B44040004B4A6 /* Connectivity WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D9717A381B6B44040004B4A6 /* Connectivity WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9717A4F1B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "Connectivity WatchKit Extension" */;
+			buildPhases = (
+				D9717A351B6B44040004B4A6 /* Sources */,
+				D9717A361B6B44040004B4A6 /* Frameworks */,
+				D9717A371B6B44040004B4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Connectivity WatchKit Extension";
+			productName = "Connectivity WatchKit Extension";
+			productReference = D9717A391B6B44040004B4A6 /* Connectivity WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D97179FA1B6B44030004B4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "MUMPK Limited Partnership.";
+				TargetAttributes = {
+					D9717A011B6B44030004B4A6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					D9717A151B6B44040004B4A6 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = D9717A011B6B44030004B4A6;
+					};
+					D9717A201B6B44040004B4A6 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = D9717A011B6B44030004B4A6;
+					};
+					D9717A291B6B44040004B4A6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					D9717A381B6B44040004B4A6 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = D97179FD1B6B44030004B4A6 /* Build configuration list for PBXProject "Connectivity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D97179F91B6B44030004B4A6;
+			productRefGroup = D9717A031B6B44030004B4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9717A011B6B44030004B4A6 /* Connectivity */,
+				D9717A151B6B44040004B4A6 /* ConnectivityTests */,
+				D9717A201B6B44040004B4A6 /* ConnectivityUITests */,
+				D9717A291B6B44040004B4A6 /* Connectivity WatchKit App */,
+				D9717A381B6B44040004B4A6 /* Connectivity WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9717A001B6B44030004B4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A101B6B44030004B4A6 /* LaunchScreen.storyboard in Resources */,
+				D9717A0D1B6B44030004B4A6 /* Assets.xcassets in Resources */,
+				D9DBC67F1B718F7000797776 /* jellyfish.jpg in Resources */,
+				D9717A0B1B6B44030004B4A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A141B6B44040004B4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A1F1B6B44040004B4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A281B6B44040004B4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A331B6B44040004B4A6 /* Assets.xcassets in Resources */,
+				D9717A311B6B44040004B4A6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A371B6B44040004B4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A4B1B6B44040004B4A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D97179FE1B6B44030004B4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A611B6B44750004B4A6 /* SessionDelegate.swift in Sources */,
+				D9717A081B6B44030004B4A6 /* ViewController.swift in Sources */,
+				D9717A061B6B44030004B4A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A121B6B44040004B4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A1B1B6B44040004B4A6 /* ConnectivityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A1D1B6B44040004B4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A261B6B44040004B4A6 /* ConnectivityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9717A351B6B44040004B4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9717A451B6B44040004B4A6 /* NotificationController.swift in Sources */,
+				D9717A431B6B44040004B4A6 /* ExtensionDelegate.swift in Sources */,
+				D9717A491B6B44040004B4A6 /* ComplicationController.swift in Sources */,
+				D9717A631B6B50080004B4A6 /* SessionDelegate.swift in Sources */,
+				D9717A411B6B44040004B4A6 /* InterfaceController.swift in Sources */,
+				D9717A471B6B44040004B4A6 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9717A181B6B44040004B4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9717A011B6B44030004B4A6 /* Connectivity */;
+			targetProxy = D9717A171B6B44040004B4A6 /* PBXContainerItemProxy */;
+		};
+		D9717A231B6B44040004B4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9717A011B6B44030004B4A6 /* Connectivity */;
+			targetProxy = D9717A221B6B44040004B4A6 /* PBXContainerItemProxy */;
+		};
+		D9717A2D1B6B44040004B4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9717A291B6B44040004B4A6 /* Connectivity WatchKit App */;
+			targetProxy = D9717A2C1B6B44040004B4A6 /* PBXContainerItemProxy */;
+		};
+		D9717A3C1B6B44040004B4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9717A381B6B44040004B4A6 /* Connectivity WatchKit Extension */;
+			targetProxy = D9717A3B1B6B44040004B4A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9717A091B6B44030004B4A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9717A0A1B6B44030004B4A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9717A0E1B6B44030004B4A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9717A0F1B6B44030004B4A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9717A2F1B6B44040004B4A6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9717A301B6B44040004B4A6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9717A4D1B6B44040004B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9717A4E1B6B44040004B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9717A501B6B44040004B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Connectivity WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.Connectivity.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D9717A511B6B44040004B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Connectivity WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.Connectivity.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D9717A541B6B44040004B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Connectivity_WatchKit_Extension;
+				INFOPLIST_FILE = "Connectivity WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.Connectivity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D9717A551B6B44040004B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Connectivity_WatchKit_Extension;
+				INFOPLIST_FILE = "Connectivity WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.Connectivity.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D9717A581B6B44040004B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Connectivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.Connectivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D9717A591B6B44040004B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Connectivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.Connectivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D9717A5B1B6B44040004B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConnectivityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.ConnectivityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Connectivity.app/Connectivity";
+			};
+			name = Debug;
+		};
+		D9717A5C1B6B44040004B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ConnectivityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.ConnectivityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Connectivity.app/Connectivity";
+			};
+			name = Release;
+		};
+		D9717A5E1B6B44040004B4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConnectivityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.ConnectivityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Connectivity;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D9717A5F1B6B44040004B4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ConnectivityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mumpk.apps.ConnectivityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Connectivity;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D97179FD1B6B44030004B4A6 /* Build configuration list for PBXProject "Connectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9717A4D1B6B44040004B4A6 /* Debug */,
+				D9717A4E1B6B44040004B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9717A4F1B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "Connectivity WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9717A501B6B44040004B4A6 /* Debug */,
+				D9717A511B6B44040004B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9717A531B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "Connectivity WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9717A541B6B44040004B4A6 /* Debug */,
+				D9717A551B6B44040004B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9717A571B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "Connectivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9717A581B6B44040004B4A6 /* Debug */,
+				D9717A591B6B44040004B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9717A5A1B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "ConnectivityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9717A5B1B6B44040004B4A6 /* Debug */,
+				D9717A5C1B6B44040004B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9717A5D1B6B44040004B4A6 /* Build configuration list for PBXNativeTarget "ConnectivityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9717A5E1B6B44040004B4A6 /* Debug */,
+				D9717A5F1B6B44040004B4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D97179FA1B6B44030004B4A6 /* Project object */;
+}
