@@ -113,7 +113,6 @@
 		D9717A4A1B6B44040004B4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9717A4C1B6B44040004B4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9717A601B6B44750004B4A6 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Connectivity/SessionDelegate.swift; sourceTree = "<group>"; };
-		D9C6769D1B73142100D4466D /* Connectivity.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Connectivity.playground; sourceTree = SOURCE_ROOT; };
 		D9DBC67E1B718F7000797776 /* jellyfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jellyfish.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				D9717A401B6B44040004B4A6 /* InterfaceController.swift */,
-				D9C6769D1B73142100D4466D /* Connectivity.playground */,
 				D9717A421B6B44040004B4A6 /* ExtensionDelegate.swift */,
 				D9717A441B6B44040004B4A6 /* NotificationController.swift */,
 				D9717A461B6B44040004B4A6 /* GlanceController.swift */,

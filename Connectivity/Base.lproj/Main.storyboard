@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="alh-p5-iST">
-                                <rect key="frame" x="50" y="50" width="500" height="253"/>
+                                <rect key="frame" x="50" y="50" width="500" height="325"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paired status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffv-73-BOg">
                                         <rect key="frame" x="0.0" y="0.0" width="500" height="29"/>
@@ -65,9 +65,6 @@
                                                 <rect key="frame" x="250" y="0.0" width="250" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OGF-k6-U3e"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -89,17 +86,56 @@
                                                 <rect key="frame" x="250" y="0.0" width="250" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zwl-HZ-gop"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Rjt-Dk-dSB" firstAttribute="width" secondItem="5Xg-OJ-gi5" secondAttribute="width" id="08i-t0-Lgn"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-ho-qDX">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O38-a1-RXX">
                                         <rect key="frame" x="0.0" y="217" width="500" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daU-v1-RgJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="transfer user"/>
+                                                <connections>
+                                                    <action selector="transferUserInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6eb-ZR-jC6"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="こんにちは" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MGu-4h-DbG">
+                                                <rect key="frame" x="250" y="0.0" width="250" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="MGu-4h-DbG" firstAttribute="width" secondItem="daU-v1-RgJ" secondAttribute="width" id="dpm-Xi-N4M"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckm-t4-66r">
+                                        <rect key="frame" x="0.0" y="253" width="500" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss1-hL-eF7">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="transfer complication"/>
+                                                <connections>
+                                                    <action selector="transferComplication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyd-HV-LdA"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="さようなら" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQE-bE-ixN">
+                                                <rect key="frame" x="250" y="0.0" width="250" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="lQE-bE-ixN" firstAttribute="width" secondItem="Ss1-hL-eF7" secondAttribute="width" id="e4O-6H-KhY"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOH-ho-qDX">
+                                        <rect key="frame" x="0.0" y="289" width="500" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="transfer file"/>
                                         <connections>
@@ -118,6 +154,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="complicationText" destination="lQE-bE-ixN" id="53V-b0-q1x"/>
                         <outlet property="installedLabel" destination="w1V-sL-u7N" id="pvj-5o-tl1"/>
                         <outlet property="pairedLabel" destination="ffv-73-BOg" id="GkU-l9-ogp"/>
                         <outlet property="progressLabel" destination="LPZ-Bz-AIs" id="h2a-Qh-nC0"/>
@@ -125,6 +162,7 @@
                         <outlet property="receivedDataLabel" destination="A1U-kq-Hqe" id="s3c-Wu-Kof"/>
                         <outlet property="sendDataButton" destination="MZ0-vJ-gUP" id="5bO-5e-oHB"/>
                         <outlet property="sendText" destination="irT-9f-He9" id="FWn-vl-yeb"/>
+                        <outlet property="transferText" destination="MGu-4h-DbG" id="dg7-St-FLA"/>
                         <outlet property="updateText" destination="Rjt-Dk-dSB" id="6BQ-Xj-Unk"/>
                     </connections>
                 </viewController>

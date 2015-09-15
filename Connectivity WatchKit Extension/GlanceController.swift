@@ -8,12 +8,13 @@
 
 import WatchKit
 import Foundation
-
+import WatchConnectivity
 
 class GlanceController: WKInterfaceController {
 
 
     @IBOutlet var transferredImage: WKInterfaceImage!
+    @IBOutlet var contextLabel: WKInterfaceLabel!
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -23,6 +24,11 @@ class GlanceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        if let context = WCSession.defaultSession().receivedApplicationContext as? [String:String],
+            message = context[dataId] {
+            contextLabel.setText(message)
+        }
         let url = try! NSFileManager.defaultManager().URLForDirectory(.DocumentDirectory,
             inDomain: .UserDomainMask, appropriateForURL: nil,  create: false)
         let urls = try! NSFileManager.defaultManager().contentsOfDirectoryAtURL(url, includingPropertiesForKeys: nil, options: .SkipsHiddenFiles)

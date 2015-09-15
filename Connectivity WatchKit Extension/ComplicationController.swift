@@ -7,14 +7,36 @@
 //
 
 import ClockKit
-
+import WatchConnectivity
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
+    lazy var sessionDelegate:SessionDelegate = {
+        let delegate = SessionDelegate()
+        return delegate
+    }()
+    var sessionActivated = false
+    var receivedData = "No Entry"
     
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([.Forward, .Backward])
+        if sessionActivated == false {
+            let session = WCSession.defaultSession()
+            sessionDelegate.didReceiveUserInfoHandler = {(context: [String: AnyObject]) -> Void in
+                // If complications of your app need reload contexts.
+                if let userInfo = context as? [String: String], data = userInfo[dataId] {
+                    self.receivedData = data
+                }
+                let server = CLKComplicationServer.sharedInstance()
+                for complication in server.activeComplications {
+                    server.reloadTimelineForComplication(complication)
+                }
+            }
+            session.delegate = sessionDelegate
+            session.activateSession()
+            sessionActivated = true
+        }
+        handler([.None])
     }
     
     func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
@@ -33,7 +55,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        let tmpl = CLKComplicationTemplateModularLargeTallBody()
+        tmpl.headerTextProvider = CLKSimpleTextProvider(text: "Received Data")
+        let bodyText = CLKSimpleTextProvider(text: receivedData)
+        tmpl.bodyTextProvider = bodyText
+        let entry = CLKComplicationTimelineEntry(date: NSDate(), complicationTemplate: tmpl)
+        handler(entry)
     }
     
     func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
@@ -57,7 +84,10 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        let tmpl = CLKComplicationTemplateModularLargeTallBody()
+        tmpl.headerTextProvider = CLKSimpleTextProvider(text: "Received Data")
+        tmpl.bodyTextProvider = CLKSimpleTextProvider(text: "Data String")
+        handler(tmpl)
     }
     
 }

@@ -21,6 +21,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var sendText: UITextField!
     @IBOutlet weak var updateText: UITextField!
+    @IBOutlet weak var transferText: UITextField!
+    @IBOutlet weak var complicationText: UITextField!
+    
     @IBAction func sendMessageToWatch(sender: AnyObject) {
         let reply = {(messages: [String: AnyObject]) -> Void in
             let value: String
@@ -60,6 +63,10 @@ class ViewController: UIViewController {
             }
             progressLabel.text = "Updating context"
             try WCSession.defaultSession().updateApplicationContext(context)
+        } catch {
+            progressLabel.text = "\(error)"
+        }
+        /*
         } catch let errorCode {
             if let error = errorCode as? WCErrorCode {
                 progressLabel.text = SessionDelegate.wcerrorString(error)
@@ -67,8 +74,31 @@ class ViewController: UIViewController {
                 progressLabel.text = "CTX \(errorCode)"
             }
         }
+        */
     }
 
+    @IBAction func transferUserInfo(sender: AnyObject) {
+        let context: [String: String]!
+        if let sendingText = transferText.text {
+            context = [dataId:sendingText]
+        } else {
+            context = [dataId: "mumpk"]
+        }
+        progressLabel.text = "Transfer UserInfo"
+        WCSession.defaultSession().transferUserInfo(context)
+    }
+    
+    @IBAction func transferComplication(sender: AnyObject) {
+        let context: [String: String]!
+        if let sendingText = complicationText.text {
+            context = [dataId:sendingText]
+        } else {
+            context = [dataId: "mumpk"]
+        }
+        progressLabel.text = "Transfer Complication"
+        WCSession.defaultSession().transferCurrentComplicationUserInfo(context)
+    }
+    
     @IBAction func transferFile(sender: AnyObject) {
         if let url = NSBundle.mainBundle().URLForResource("jellyfish", withExtension: "jpg") {
             let metadata = ["name":"jellyfish", "extension":"jpg", "type":"jpeg"]
@@ -102,6 +132,14 @@ class ViewController: UIViewController {
                 } else {
                     self.receivedDataLabel.text = "NoName"
                 }
+            }
+            sessionDelegate.didReceivedMessageHandler = {(message: [String: AnyObject]) -> Void in
+                if let data = message[dataId] {
+                    self.receivedDataLabel.text = String(data)
+                } else {
+                    self.receivedDataLabel.text = "NoName"
+                }
+                self.progressLabel.text = "Message Received"
             }
             session.delegate = sessionDelegate
             session.activateSession()

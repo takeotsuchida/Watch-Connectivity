@@ -21,12 +21,38 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sendButton: WKInterfaceButton!
     @IBOutlet var checkButton: WKInterfaceButton!
     
+    
+    @IBAction func sendMessageToPhone(sender: AnyObject) {
+        let reply = {(messages: [String: AnyObject]) -> Void in
+            let value: String
+            if let val = messages[dataId] {
+                value = String(val)
+            } else {
+                value = "Nil"
+            }
+            self.statusLabel.setText("Reply Handler")
+            self.dataLabel.setText(value)
+        }
+        let error = {(error: NSError) -> Void in
+            self.statusLabel.setText("Error Handler")
+            if let errorCode = WCErrorCode(rawValue: error.code) {
+                let errorString = SessionDelegate.wcerrorString(errorCode)
+                self.dataLabel.setText("\(errorString)")
+            } else {
+                self.statusLabel.setText("Error Handler")
+                self.dataLabel.setText("\(error.localizedDescription)")
+            }
+        }
+        statusLabel.setText("Sending message")
+        WCSession.defaultSession().sendMessage([dataId: "Watch's Message"], replyHandler: reply, errorHandler: error)
+    }
+    
     @IBAction func transferUserInfo() {
         guard WCSession.defaultSession().reachable else {
             statusLabel.setText("Could Not Send")
             return
         }
-        let userInfo = ["name": "From Watch"]
+        let userInfo = ["name": "I'm Watch"]
         let userInfoTransfer = WCSession.defaultSession().transferUserInfo(userInfo)
         if userInfoTransfer.transferring {
             statusLabel.setText("transferring")
@@ -58,11 +84,22 @@ class InterfaceController: WKInterfaceController {
                     self.statusLabel.setText("Not Reachable")
                 }
             }
+            sessionDelegate.didReceiveUserInfoHandler = {(context: [String: AnyObject]) -> Void in
+                // If complications of your app need reload contexts.
+                if let userInfo = context as? [String: String], data = userInfo[dataId] {
+                    self.dataLabel.setText(String(data))
+                }
+
+            }
             sessionDelegate.didReceivedMessageHandler = {(context: [String: AnyObject]) -> Void in
                 if let data = context[dataId] {
                     self.dataLabel.setText(String(data))
                 } else {
                     self.dataLabel.setText("No Message")
+                }
+                let server = CLKComplicationServer.sharedInstance()
+                for complication in server.activeComplications {
+                    server.extendTimelineForComplication(complication)
                 }
             }
             sessionDelegate.didReceiveApplicationContextHandler = {(context: [String: AnyObject]) -> Void in
